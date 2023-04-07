@@ -36,6 +36,9 @@ namespace AvaliacaoDesenvolvimento.Pergunta1
         {
             Console.WriteLine($"Total de carros até 2000: {until2000Discount.Total}\n"
                 + $"Total Geral de carros: {until2000Discount.Total + above2000Discount.Total}");
+
+            Console.WriteLine("\n\n Pressione qualquer tecla para continuar...");
+            Console.ReadKey();
         }
 
         void PrintDiscount(Decimal discount, Car car)
