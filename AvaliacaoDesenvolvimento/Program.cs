@@ -1,10 +1,12 @@
 ﻿using AvaliacaoDesenvolvimento.Application;
 using AvaliacaoDesenvolvimento.Application.Menu;
 using AvaliacaoDesenvolvimento.Pergunta1;
+using AvaliacaoDesenvolvimento.Pergunta2;
 
 List<string> options = new List<string>();
 
 options.Add("Pergunta 1");
+options.Add("Pergunta 2");
 
 options.Add("Exit");
 
@@ -16,12 +18,16 @@ int select = 0;
 do
 {
     select = menu.RenderMenu();
+    Console.Clear();
 
     switch (select)
     {
         case 0:
             pergunta = new Pergunta1();
-            Console.Clear();
+            pergunta.Execute();
+            break;
+        case 1:
+            pergunta = new Pergunta2();
             pergunta.Execute();
             break;
     }

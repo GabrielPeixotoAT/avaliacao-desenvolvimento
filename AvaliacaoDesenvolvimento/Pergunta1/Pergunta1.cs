@@ -53,7 +53,7 @@ namespace AvaliacaoDesenvolvimento.Pergunta1
 
             Console.Write("Preco do carro: $ ");
             string price = Console.ReadLine();
-
+            
             return new Car(int.Parse(year), Decimal.Parse(price));
         }
     }
