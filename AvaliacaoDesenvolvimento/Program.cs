@@ -3,12 +3,14 @@ using AvaliacaoDesenvolvimento.Application.Menu;
 using AvaliacaoDesenvolvimento.Pergunta1;
 using AvaliacaoDesenvolvimento.Pergunta2;
 using AvaliacaoDesenvolvimento.Pergunta3;
+using AvaliacaoDesenvolvimento.Pergunta4;
 
 List<string> options = new List<string>();
 
 options.Add("Pergunta 1");
 options.Add("Pergunta 2");
 options.Add("Pergunta 3");
+options.Add("Pergunta 4");
 
 options.Add("Exit");
 
@@ -34,6 +36,10 @@ do
             break;
         case 2:
             pergunta = new Pergunta3();
+            pergunta.Execute();
+            break;
+        case 3:
+            pergunta = new Pergunta4();
             pergunta.Execute();
             break;
     }
